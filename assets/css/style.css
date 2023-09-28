@@ -69,3 +69,11 @@ nav a {
     border-bottom-right-radius: 10%;
 }
 
+@media screen and (max-width:768px) {
+    .work-2-3 {
+        flex-direction: column;
+    }
+    .third-element .application {
+        order: 2;
+    }
+}
