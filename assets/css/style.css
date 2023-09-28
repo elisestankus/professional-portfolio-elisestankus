@@ -42,3 +42,30 @@ nav a {
     height: 100px;
 }
 
+.application {
+    border: solid var(--light) 10px;
+    border-radius: 10%;
+    padding: 5px;
+    margin: 5px;
+    flex: 1 0 200px;
+}
+
+.work-2-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.second-element .application {
+    width: 50%;
+}
+
+.third-element .application {
+    width: 50%;
+}
+
+.app-img {
+    width: 100%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
