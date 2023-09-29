@@ -1,0 +1,107 @@
+/*assigning colors to variables allows specific colors to be used throughout the CSS sheet more easily*/
+:root {
+    --dark: rgb(85, 107, 85);
+    --light: rgb(139, 167, 139);
+}
+
+/*universal selector sets font-family for whole webpage*/
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: whitesmoke;
+    display: inline;
+}
+
+header {
+    background-color: var(--light);
+    width: 100%;
+}
+
+nav {
+    background-color: var(--dark);
+    text-align: right;
+}
+
+/*text-decoration:none removes underline that is automatically applied to anchor elements*/
+a {
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline;
+}
+
+.profile-pic {
+    border-radius: 25%;
+    border: solid var(--light) 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.application {
+    border: solid var(--light) 10px;
+    border-radius: 10%;
+    padding: 5px;
+    margin: 5px;
+    flex: 1 0 200px;
+}
+
+/*display: flex makes the child elements (2nd and 3rd work samples) behave like a column/row*/
+/*flex-wrap tells the flex elements to wrap onto multiple lines */
+.work-2-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.second-element .application {
+    width: 50%;
+}
+
+.third-element .application {
+    width: 50%;
+}
+
+.app-img {
+    width: 100%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.contact {
+    display: inline;
+    color: whitesmoke;
+    margin: 10px;
+    padding: 5px;
+}
+
+footer {
+    background-color: var(--light);
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+footer h2 {
+    background-color: var(--dark);
+    color: whitesmoke;
+}
+
+/*using media screen and max width allows us to make the webpage layout responsive so the content will adapt to various screen sizes*/
+
+@media screen and (max-width:768px) {
+    .work-2-3 {
+        flex-direction: column;
+    }
+    .third-element .application {
+        order: 2;
+    }
+}
+
