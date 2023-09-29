@@ -1,11 +1,14 @@
+/*assigning colors to variables allows specific colors to be used throughout the CSS sheet more easily*/
 :root {
     --dark: rgb(85, 107, 85);
     --light: rgb(139, 167, 139);
 }
 
+/*universal selector sets font-family for whole webpage*/
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 body {
     padding: 0;
@@ -27,7 +30,8 @@ nav {
     text-align: right;
 }
 
-nav a {
+/*text-decoration:none removes underline that is automatically applied to anchor elements*/
+a {
     margin: 10px;
     padding: 10px;
     text-decoration: none;
@@ -50,6 +54,8 @@ nav a {
     flex: 1 0 200px;
 }
 
+/*display: flex makes the child elements (2nd and 3rd work samples) behave like a column/row*/
+/*flex-wrap tells the flex elements to wrap onto multiple lines */
 .work-2-3 {
     display: flex;
     flex-wrap: wrap;
@@ -88,9 +94,7 @@ footer h2 {
     color: whitesmoke;
 }
 
-footer a {
-    text-decoration: none;
-}
+/*using media screen and max width allows us to make the webpage layout responsive so the content will adapt to various screen sizes*/
 
 @media screen and (max-width:768px) {
     .work-2-3 {
