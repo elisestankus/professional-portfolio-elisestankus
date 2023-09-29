@@ -31,7 +31,7 @@ nav {
 }
 
 /*text-decoration:none removes underline that is automatically applied to anchor elements*/
-a {
+nav a,footer a {
     margin: 10px;
     padding: 10px;
     text-decoration: none;
@@ -61,18 +61,19 @@ a {
     flex-wrap: wrap;
 }
 
+
+.app-img {
+    width: 100%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
 .second-element .application {
     width: 50%;
 }
 
 .third-element .application {
     width: 50%;
-}
-
-.app-img {
-    width: 100%;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
 }
 
 .contact {
