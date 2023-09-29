@@ -22,4 +22,4 @@ add link here
 
 ## Screenshot 
 
-add screenshot here
+<img src="./assets/images/professional-portfolio-screenshot.png" alt="screenshot of my professional portfolio webpage">
